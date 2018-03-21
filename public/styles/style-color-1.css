@@ -1,0 +1,83 @@
+figure .links-wrap:after{
+	background: #3D73B8;
+  background: -webkit-linear-gradient(left, #37D97D 0%, #3D73B8 100%);
+  background: -moz-linear-gradient(left, #37D97D 0%, #3D73B8 100%);
+  background: -ms-linear-gradient(left, #37D97D 0%, #3D73B8 100%);
+  background: -o-linear-gradient(left, #37D97D 0%, #3D73B8 100%);
+  background: linear-gradient(left, #37D97D 0%, #3D73B8 100%);
+}
+@media(max-width: 992px){
+  .k-nav-inside{
+		background: #3D73B8;
+	  background: -webkit-linear-gradient(right, #37D97D 0%, #3D73B8 100%);
+	  background: -moz-linear-gradient(right, #37D97D 0%, #3D73B8 100%);
+	  background: -ms-linear-gradient(right, #37D97D 0%, #3D73B8 100%);
+	  background: -o-linear-gradient(right, #37D97D 0%, #3D73B8 100%);
+	  background: linear-gradient(right, #37D97D 0%, #3D73B8 100%);
+	}
+}
+#page-preloader,
+.bg-primary,
+.shape-after,
+.pricing-box-head,
+.pricing-box-head:after,
+figure figcaption:after,
+.video-wrap .overlay-image:before, .video-wrap .overlay-image:after,
+.contact-data,
+.k-nav:after,
+.first-section,
+.first-section.video:before,
+.first-section.bg-image:before,
+.main-footer{
+	background: #3D73B8;
+  background: -webkit-linear-gradient(right, #37D97D 0%, #3D73B8 100%);
+  background: -moz-linear-gradient(right, #37D97D 0%, #3D73B8 100%);
+  background: -ms-linear-gradient(right, #37D97D 0%, #3D73B8 100%);
+  background: -o-linear-gradient(right, #37D97D 0%, #3D73B8 100%);
+  background: linear-gradient(right, #37D97D 0%, #3D73B8 100%);
+}
+
+a:hover,
+a:focus,
+h1 a:focus, h1 a:hover, h2 a:focus, h2 a:hover, h3 a:focus, h3 a:hover, h4 a:focus, h4 a:hover, h5 a:focus, h5 a:hover, h6 a:focus, h6 a:hover, .h1 a:focus, .h1 a:hover, .h2 a:focus, .h2 a:hover, .h3 a:focus, .h3 a:hover, .h4 a:focus, .h4 a:hover, .h5 a:focus, .h5 a:hover, .h6 a:focus, .h6 a:hover,
+html body .text-primary,
+.btn-default:hover,
+.btn-primary,
+.download-btn a,
+.download-btn i,
+.icon-wrap,
+.pricing-box .btn-default,
+.pricing-box .btn-primary:hover,
+.video-wrap .btn-play,
+.contact-form .btn:active:focus, .contact-form .btn:focus:hover {
+  color: #3D73B8;
+}
+
+body::-webkit-scrollbar-thumb,
+.icon-primary,
+.marked-list li span:before, .marked-list li span:after,
+.bullet-list li span:before,
+.divider,
+.pricing-box .btn-default:hover,
+.pricing-box .btn-default:active:focus,
+.pricing-box .btn-primary,
+.contact-form .btn,
+.owl-controls .owl-dot.active,
+.toTopButton {
+  background: #3D73B8;
+}
+
+.icon-wrap,
+.icon-wrap:after,
+.pricing-box .btn-default,
+.pricing-box .btn-primary:hover,
+.form-control:focus,
+.contact-form .btn,
+.owl-controls .owl-dot {
+	border-color: #3D73B8;
+}
+
+.social li { display: inline-block; margin: 0 4px; }
+.social li a { color: #3c3c3c; background: #fff; padding-top: 6px; display: inline-block; height: 30px; width: 30px; font-size: 16px; text-align: center; border-radius: 50%; line-height: 30px; }
+.social li a:hover { background: #7a0fff; color: #fff; }
+

@@ -1,0 +1,111 @@
+{{!< default}}
+<!--/////////////////////////// CONTENT \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+<main class="main-container">
+	
+	<!--========== Header section ==========-->
+	<section id="one" class="k-parallax">
+		<div class="first-section bg-gradient all-light shape-1">
+			<div class="container">
+				<div class="row flex-center flex-middle">
+					<div class="col-md-7 text-md-left k-parallax-content" data-fade="true" data-speed="0.3">
+						<h1>CONGRATULATIONS </h1>
+						<h5>You have just launched your first UNCHAINET cloud workload! <br><br>Discuss on social:</h5>
+						<br>
+						<ul class="social">
+							<li class="animated" data-animate="fadeInUp" data-delay="1.1"><a href="https://t.me/unchainet"><em class="fa fa-telegram"></em></a></li>
+							<li class="animated" data-animate="fadeInUp" data-delay="1.2"><a href="https://www.facebook.com/unchainet"><em class="fa fa-facebook"></em></a></li>
+							<li class="animated" data-animate="fadeInUp" data-delay="1.3"><a href="https://twitter.com/unchainet"><em class="fa fa-twitter"></em></a></li>
+							<li class="animated" data-animate="fadeInUp" data-delay="1.4"><a href="https://github.com/orgs/unchainet"><em class="fa fa-github"></em></a></li>
+							<li class="animated" data-animate="fadeInUp" data-delay="1.5"><a href="#"><em class="fa fa-bitcoin"></em></a></li>
+							<li class="animated" data-animate="fadeInUp" data-delay="1.6"><a href="https://medium.com/@unchainet"><em class="fa fa-medium"></em></a></li>
+						</ul>
+						
+						<h5>
+						<br class="hide show-md-block"> 
+						This website is connected to the database specified in launch config file. To see it in action, share your ♥ message and it will be displayed below.
+						</h5>
+						<br>
+
+						
+						<a data-scroll-to="#two" href="#" class="btn btn-md btn-default">See messages</a>
+					</div>
+					<div class="col-md-5">
+						{{#if enquirySubmitted}}
+							<h3>Thanks for getting in touch.</h3>
+						{{else}}
+							<form class="text-white" method="post">
+								<input type="hidden" name="action" value="contact">
+								<input type="hidden" name="enquiryType" value="message">
+								<div class="form-group {{#if validationErrors.name}}has-error{{/if}}">
+									
+									<input type="text" name="name" placeholder="Username" class="form-control" value="{{formData.name}}">
+								</div>
+								<div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
+									
+									<input type="email" name="email" class="form-control" placeholder="Email address (will not be shared)" value="{{formData.email}}">
+								</div>
+								
+								<div class="form-group {{#if validationErrors.message}}has-error{{/if}} ">
+									
+									<textarea name="message" placeholder="Leave us a message..." rows="4" class="form-control">{{formData.message}}</textarea>
+								</div>
+								<div class="form-actions">
+									<button type="submit" class="btn btn-md btn-default">Share message</button>
+								</div>
+							</form>
+
+							{{#if messages}}
+								<div id="flash-messages" class="container ">
+									{{#if messages.info}}
+										<div class="form-result correct">
+											{{{flashMessages messages.info}}}
+										</div>
+									{{/if}}
+									{{#if messages.success}}
+										<div class="form-result correct">
+											{{{flashMessages messages.success}}}
+										</div>
+									{{/if}}
+									{{#if messages.warning}}
+										<div class="form-result alert alert-warning">
+											{{{flashMessages messages.warning}}}
+										</div>
+									{{/if}}
+									{{#if messages.error}}
+										<div class="form-result incorrect">
+											{{{flashMessages messages.error}}}
+										</div>
+									{{/if}}
+								</div>
+							{{/if}}
+						{{/if}}
+							
+						
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--========== Features section ==========-->
+	<section id="two" class="p-100">
+		<div class="container">
+			<div class="row  flex-middle">
+			{{#each enquiries}}
+					<div class="col-sm-3 col-lg-2 col-xs-6">
+						<figure style="width: 185px; height: 213px; display: block; background: rgba(0,0,0,0.8); padding:5px; color: white">
+							{{message}}
+							<div class="links-wrap">
+								{{timeFmt}}
+							</div>
+							<figcaption class="all-light">
+								<h6 class="text-bold">{{name}}</h6>
+							</figcaption>
+						</figure>
+					</div>
+
+			{{/each}}
+			</div>
+		</div>
+	</section>
+</main>

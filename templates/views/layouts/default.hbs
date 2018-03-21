@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>unchainet-demo-website</title>
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<link href="/styles/bootstrap.min.css" rel="stylesheet">
+		<link href="/styles/style.css" rel="stylesheet">
+		<link href="/styles/style-color-1.css" rel="stylesheet">
+
+		{{!-- This file provides the default styling for the KeystoneJS Content Editor
+			- only renders when user is logged in and admin--}}
+		{{{isAdminEditorCSS user}}}
+
+		{{!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+		//- Safely remove this block if you are not targeting IE8 --}}
+		<!--[if lt IE 9]>
+			<script src="//cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.js"></script>
+			<script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+	<body>
+		<div id="page-preloader">
+			<div class="contpre">
+				<div class="loader"></div>
+			</div>
+		</div>
+		<div class="main-wrapper">
+		<!--/////////////////////////// HEADER \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+		<header  class="main-header">
+			<!-- Nav -->
+			<div class="k-nav all-light">
+				<div class="k-nav-toggle"><span></span></div>
+				<div class="k-nav-outside">
+					<div class="k-nav-inside">
+						<a href="/" class="k-nav-logo">
+							<img src="/images/logo.png" width="700" height="200" alt=""/>
+						</a>
+						<ul class="k-nav-links">
+							<li class="active"><a href="#" data-nav-to="#one">Home</a></li>
+							<li><a data-nav-to="#two" href="https://www.unchainet.com" target="_blank">UNCHAINET main website</a></li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<div id="body">
+			<!-- The content block should contain the body of your template's content-->
+			{{{body}}}
+
+
+			
+				
+			
+		</div>
+		</div>
+		<script src="/js/minified.js"></script>
+
+		<!-- Additional Functionality Scripts -->
+		<script src="/js/main.js"></script>
+		{{{isAdminEditorJS user}}}
+	</body>
+</html>
