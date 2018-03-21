@@ -4858,8 +4858,19 @@ blockquote {
   .form-control:focus {
     box-shadow: none;
     border-color: #3D73B8; }
-  .form-control::-webkit-input-placeholder {
-    color: white; }
+  .form-control::-webkit-input-placeholder{ 
+    color: white;
+	opacity: 1;
+  }
+
+  .form-control::-moz-placeholder{
+	color: white;
+	opacity: 1;
+  }
+  .form-control{
+	color: white;
+  }
+
 
 textarea.form-control {
   height: 180px;
